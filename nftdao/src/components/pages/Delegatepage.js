@@ -88,7 +88,7 @@ export const Delegatepage = () => {
               { Address !== "" ? (
                 <div>
                   <button className="btn btn-dark btn-lg btn-block" onClick={() => delegateUser(Address)}
-                  style={{ background: "radial-gradient(523px at 7.1% 19.3%, rgb(147, 15, 255) 2%, rgb(5, 49, 255) 100.7%)" }}>\
+                  style={{ background: "radial-gradient(523px at 7.1% 19.3%, rgb(147, 15, 255) 2%, rgb(5, 49, 255) 100.7%)" }}>
                     Delegate</button>
                 </div>
               ) : (

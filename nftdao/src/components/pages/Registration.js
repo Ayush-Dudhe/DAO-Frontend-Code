@@ -17,7 +17,7 @@ function Registration() {
   function handleFormSubmit(e) {
     e.preventDefault();
 
-    if (!name || !email || !password) {
+    if(!name || !email || !password) {
       setFlag(true);
     } else {
       setFlag(false);
@@ -38,7 +38,7 @@ function Registration() {
       fetch("http://localhost:8080/register", requestOptions)
         .then((response) => response.json())
         .then((data) => {
-          if(data.message = 'User already Present'){
+          if(data.message == 'User already Present'){
             console.log(data);
             setRegistration(true);
           }

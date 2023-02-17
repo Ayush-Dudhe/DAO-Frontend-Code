@@ -46,19 +46,19 @@ const NftPage = () => {
               </div>
             </div> */}
             <div>
-            <NftCard nftValue={1} price={150000000000} /></div>
+            <NftCard nftValue={1} price={150000000000000000} /></div>
           </Grid>
           <Grid item xs={3}>
-            <NftCard nftValue={2} price={180000000000} />
+            <NftCard nftValue={2} price={180000000000000000} />
           </Grid>
           <Grid item xs={3}>
-            <NftCard nftValue={3} price={250000000000} />
+            <NftCard nftValue={3} price={250000000000000000} />
           </Grid>
           <Grid item xs={3}>
-            <NftCard nftValue={4} price={190000000000} />
+            <NftCard nftValue={4} price={190000000000000000} />
           </Grid>
           <Grid item xs={3}>
-            <NftCard nftValue={5} price={160000000000} />
+            <NftCard nftValue={5} price={160000000000000000} />
           </Grid>
         </Grid>
       </div>

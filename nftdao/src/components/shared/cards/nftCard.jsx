@@ -49,12 +49,13 @@ export const NftCard = ({nftValue, price}) => {
     });
   }
 
-  const buyNft = () => {
-    console.log('inside buy nft')
-    myContract.methods.mintNFT(AddressJson['userAddress2'], 3).send().then(res => {
+  const buyNft = (nftId) => {
+    console.log('inside buy nft',nftId)
+    myContract.methods.mintNFT(AddressJson['userAddress2'], nftId).send().then(res => {
       console.log('NFT minted',res)
       sendTransaction()
       selfDelegate(AddressJson['userAddress2'])
+      setSold(true)
     })
   }
 
@@ -119,7 +120,7 @@ export const NftCard = ({nftValue, price}) => {
             </div>
             {
               !sold ? 
-              <div class="button-91" onClick={() => buyNft()}>
+              <div class="button-91" onClick={() => buyNft(nftValue)}>
                 Buy NFT
               </div> : 
               <div>
